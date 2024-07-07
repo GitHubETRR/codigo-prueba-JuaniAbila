@@ -6,16 +6,16 @@
 #define SALIR 99
 
 int EnterPoly(int []);
-int EnterPolyMat(int [][])
+//int EnterPolyMat(int []);
 void PrintPoly(int [],int);
 
 
 void DerivatePoly(int [],int [],int);
-void Suma(void);
+//void Suma(void);
 void Request(int );
 
 int DerivateSector(void);
-void SumSector(void);
+//void SumSector(void);
 
 void Welcome(void);
 
@@ -27,9 +27,6 @@ int main (void)
    
    switch(Select)
    {
-      case '+':
-         SumSector();
-            break;
       case '-':
          //to do
             break;
@@ -53,7 +50,7 @@ int DerivateSector(void) //Principal derivation function
    printf("Bienvenido a este sector para calcular funciones derivadas\n"); 
    Grade=EnterPoly(Coefficient);
    DerivatePoly(Coefficient,CoefficientDerivate,Grade);
-   printf("Tu funciones son:\n")
+   printf("Tu funciones son:\n");
    PrintPoly(Coefficient,Grade);
    PrintPoly(CoefficientDerivate,Grade-1);
 }
@@ -62,7 +59,6 @@ void PrintPoly(int Coefficient[],int Grade)
    char Sign;
    Grade-=2;
    Sign=Coefficient[Grade]<0?'-':' ';
-   printf
    if(Coefficient[Grade]!=0)printf(" %c %dX^%d ",Sign,abs(Coefficient[Grade]),Grade); 
    Grade--;
    for(;Grade!=0;Grade--)
@@ -123,7 +119,7 @@ void Welcome(void)
    printf("Derivar: d\n");
 }
 //tutuca estuvo aqui
-void SumSector(void)
+/* void SumSector(void)
 {
    int i;
    int Number[2][MAXNUM];
@@ -159,7 +155,7 @@ void Suma(void)
       printf("%d",NumOut);      
    }
    printf("El resultado de tu suma es: %d\n", NumOut);
-   printf("Si quieres salir del sector de suma ingresa un 0")
+   printf("Si quieres salir del sector de suma ingresa un 0");
    scanf("%d",&i);
-   } while(i)
-}
+   } while(i);
+}*/
