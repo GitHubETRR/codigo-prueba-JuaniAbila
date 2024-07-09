@@ -6,16 +6,14 @@
 #define SALIR 99
 
 int EnterPoly(int []);
-//int EnterPolyMat(int []);
 void PrintPoly(int [],int);
-
+void OperatePoly(int[],int[],int);
 
 void DerivatePoly(int [],int [],int);
-//void Suma(void);
 void Request(int );
 
 int DerivateSector(void);
-//void SumSector(void);
+void SumSector(void);
 
 void Welcome(void);
 
@@ -115,44 +113,43 @@ void Welcome(void)
    printf("Sumar: +  Restar: -   Multiplicar: *   Dividir: /\n");
    printf("Derivar: d\n");
 }
-//tutuca estuvo aqui
-/* void SumSector(void)
+void SumSector(void)
 {
    int i;
-   int Number[2][MAXNUM];
-   printf("Bienvenido a esta calculadora\n ");
+   printf("Bienvenido a esta sumadora\n ");
    printf("¿Que tipo de suma quieres hacer?\n");
    printf("Si quieres hacer una suma de polinomios ingresa 1\nSi quieres sumar numeros ingresa 2\nSi quieres sumar numeros complejos ingresa un 3");
    scanf("%d",&i);
    switch (i)
    {
       case: 1
-         printf("Ingresa tus numeros a sumar");
-         EnterPolyMat()
+
    }
 }
-int EnterPolyMat(int Num[][])
+
+
+
+
+void SumPoly(void)
 {
-   printf("Ingresa ")
+   int Coefficient1[MAXNUM];
+   int Coefficient2[MAXNUM];
+   int Grade=0;
+   Grade=EnterPoly(Co)
 }
-void Suma(void)
+void OperatePoly(int Coef1[],int Coef2[],int Select,int Grade)
 {
-   int NumIn=0, int NumOut=0; int i=0;
-   char Signo;
-   do
-   {   
-   printf("Ingresa numeros, el resultado de tu suma se va a ver reflejado luego de cada adicion");
-   for(;;)
+   if(i) //Suma
    {
-      scanf("%d",&NumIn);
-      Signo=NumIn>0?'+':'-';
-      printf("%d %c %d: ",NumOut, Signo,abs(NumIn));
-      NumOut=NumIn+NumOut;
-      if(NumIn) break;
-      printf("%d",NumOut);      
+      for(;Grade!=0;Grade--)
+      {
+         Coef1[Grade] = Coef1[Grade] + Coef2[Grade];
+      }
+   } else //Resta
+   {
+      for(;Grade!=0;Grade--)
+      {
+         Coef1[Grade] = Coef1[Grade] - Coef2[Grade];
+      }
    }
-   printf("El resultado de tu suma es: %d\n", NumOut);
-   printf("Si quieres salir del sector de suma ingresa un 0");
-   scanf("%d",&i);
-   } while(i);
-}*/
+}
