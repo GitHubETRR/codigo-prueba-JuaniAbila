@@ -27,9 +27,6 @@ int main (void)
    
    switch(Select)
    {
-      case '-':
-         //to do
-            break;
       case '*':
          //to do
             break;
