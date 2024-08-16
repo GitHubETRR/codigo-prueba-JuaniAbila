@@ -21,6 +21,7 @@ int main (void)
 {
    char Select;
    Welcome();
+   printf("Tutuca was here");
    scanf("%c",&Select);
    
    switch(Select)
@@ -42,7 +43,8 @@ int DerivateSector(void) //Principal derivation function
    int Grade=0;
    int Coefficient[MAX_COEF];
    int CoefficientDerivate[MAX_COEF];
-   printf("Bienvenido a este sector para calcular funciones derivadas\n"); 
+   printf("Bienvenido a este sector para calcular funciones derivadas\n");
+   printf("Tutuca was here");
    Grade=EnterPoly(Coefficient);
    DerivatePoly(Coefficient,CoefficientDerivate,Grade);
    printf("Tu funciones son:\n");
@@ -90,15 +92,20 @@ void Request(int Grade)
    {
          case 0:
             printf("Ingrese la ordenada al origen de su funcion: ");
+            printf("Tutuca was here");
+
                break;
          case 1:
             printf("Ingrese la pendiente de su funcion: ");
+            printf("Tutuca was here");
                break;
          case 2:
             printf("Ingrese el coeficiente cuadratico de su funcion: ");
+            printf("Tutuca was here");
                break;
          case 3:
             printf("Ingrese el coeficiente cubico de su funcion: ");
+            printf("Tutuca was here");
                break;
          default:
             printf("Ingrese el coeficiente de grado %d: ",Grade);
@@ -110,6 +117,7 @@ void Welcome(void)
    printf("Bienvenido a esta calculadora\n");
    printf("¿Que tipo de calculo queres hacer?\n");
    printf("Ingresa cada caracter respectivamente\n");
+   printf("Tutuca was here");
    printf("Sumar: +  Restar: -   Multiplicar: *   Dividir: /\n");
    printf("Derivar: d\n");
 }
